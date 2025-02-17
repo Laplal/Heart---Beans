@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", function () {
             return;
         }
 
-        // Store reservation details in localStorage
+        // Store reservation details in localStorage under `currentReservation`
         const reservationDetails = {
             name,
             email,
@@ -56,11 +56,9 @@ document.addEventListener("DOMContentLoaded", function () {
         confirmationModal.style.display = "flex";
     });
 
-    // Close the modal when "OK" button is clicked
+    // Close the modal and redirect to Account page
     closePopupBtn.addEventListener("click", function () {
         confirmationModal.style.display = "none";
         window.location.href = "account.html";
     });
-});
-
 });
