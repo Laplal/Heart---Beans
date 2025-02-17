@@ -125,15 +125,15 @@ textarea {
     display: none;
     position: fixed;
     z-index: 1000;
-    left: 0;
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); 
+    background-color: rgba(0, 0, 0, 0.5);
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 
 .modal-content {
     background: white;
@@ -145,6 +145,7 @@ textarea {
     width: 90%;
 }
 
+
 .modal-btn {
     background: #732d1d;
     color: white;
@@ -154,6 +155,10 @@ textarea {
     cursor: pointer;
     border-radius: 5px;
     margin-top: 10px;
+}
+
+.modal-btn:hover {
+    background: #5a2214;
 }
 
 .modal-btn:hover {
