@@ -97,3 +97,10 @@ document.getElementById("close-popup").addEventListener("click", function () {
     document.getElementById("confirmation-modal").style.display = "none";
     window.location.href = "account.html";
 });
+
+
+// Function to clear the order
+function clearOrder() {
+    localStorage.removeItem("cart");
+    loadCartItems();
+}
