@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account</title>
+    <link rel="stylesheet" href="account.css">
+    <script src="navbar.js" defer></script>
+</head>
+<body>
+
+    <div id="navbar-container"></div> 
+
+   <!-- Centered Profile Section -->
+    <div class="profile-container">
+    <img src="Images/profile-placeholder.png" alt="User Profile" class="profile-img">
+    <h2 id="user-name">Full Name</h2>
+    <p>Reward System: <strong><span id="reward-points">0</span> Points</strong></p>
+    </div>
+
+
+    <div class="account-container">
+        <!-- Left Section  -->
+        <div class="info-box">
+            <h3 class="box-title">Contact Information</h3>
+            <p id="user-phone">Phone Number:</p>
+            <p id="user-email">Email:</p>
+            <p>Password: ****</p>
+            <p id="user-address">Address:</p>
+            <button class="modify-btn">Modify Information</button>
+        </div>
+    
+        <!-- Right Section  -->
+        <div class="info-box">
+            <h3 class="box-title">Recent Orders</h3>
+            <div class="orders-list">
+            </div>
+        </div>
+    </div>
+
+    <!--  Reservation Box -->
+    <div class="reservation-box">
+        <h3 class="box-title">Current Reservation</h3>
+        <p id="reservation-date">Date: </p>
+        <p id="reservation-time">Time: </p>
+        <p id="reservation-guests"># of Guests: </p>
+        <p id="reservation-requests">Requests: </p>
+    </div>
+
+    <!-- Logout Button -->
+    <div class="logout-container">
+        <button class="logout-btn" onclick="showLogoutWarning()">LOGOUT</button>
+    </div>
+
+    <!-- Logout Confirmation Modal -->
+    <div id="logout-modal" class="modal">
+        <div class="modal-content">
+            <p>Are you sure you want to log out? All your data will be lost.</p>
+            <button id="confirm-logout" class="modal-btn">Yes, Log Out</button>
+            <button id="cancel-logout" class="modal-btn cancel-btn">Cancel</button>
+        </div>
+    </div>
+
+    <script src="account.js" defer></script>
+
+</body>
+</html>

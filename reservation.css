@@ -1,0 +1,121 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #fff;
+}
+
+
+.reservation-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px; 
+    margin: 40px auto;
+    width: 100%;
+}
+
+
+.side-logo {
+    width: 400px; 
+    height: auto;
+    opacity: 0.7; 
+}
+
+
+.left-logo {
+    align-self: flex-start; 
+}
+
+.right-logo {
+    align-self: flex-end; 
+}
+
+
+.reservation-container {
+    width: 450px; 
+    padding: 0;
+    border: 2px solid brown;
+    background: white;
+    border-radius: 5px;
+    overflow: hidden;
+    text-align: center;
+}
+
+
+.reservation-title {
+    background: #732d1d;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    width: 100%;
+    margin: 0;
+    border-radius: 5px 5px 0 0;
+}
+
+
+#reservation-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 20px;
+    text-align: left;
+}
+
+
+label {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+
+input, select, textarea {
+    padding: 10px;
+    border: 1px solid brown;
+    border-radius: 4px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+select {
+    height: 40px;
+}
+
+
+textarea {
+    resize: none;
+    height: 80px;
+}
+
+
+.reserve-btn {
+    background: #732d1d;
+    color: white;
+    font-size: 18px;
+    padding: 12px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.reserve-btn:hover {
+    background: #5a2214;
+}
+
+
+.reservation-note {
+    font-size: 26px;
+    color: #732d1d;
+    text-align: center;
+    margin-top: 10px;
+    font-style: italic;
+    font-weight: bold;
+}

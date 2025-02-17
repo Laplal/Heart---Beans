@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Confirmation</title>
+    <link rel="stylesheet" href="order.css">
+    <script src="navbar.js" defer></script>
+</head>
+<body>
+
+    <div id="navbar-container"></div>
+
+    <div class="order-container">
+        <!-- Order Summary -->
+        <div class="order-summary">
+            <h3 class="summary-title">Order Confirmation:</h3>
+            <div id="order-items">
+            </div>
+
+            <!-- Divider -->
+            <hr class="order-divider">
+
+            <div class="order-total">
+                <p><strong>Subtotal:</strong> <span id="subtotal">$0.00</span></p>
+                <p><strong>Total (1.13% Tax):</strong> <span id="total">$0.00</span></p>
+            </div>
+
+            <button class="clear-btn" onclick="clearOrder()">CLEAR ORDER</button>
+        </div>
+
+        <!-- Delivery Mode -->
+        <div class="delivery-mode">
+            <h3 class="delivery-title">Delivery Mode</h3>
+            <span class="delivery-btn" onclick="selectDelivery('On-Demand Pick-Up')">On-Demand Pick-Up</span>
+            <span class="delivery-btn" onclick="selectDelivery('Scheduled Pick-Up')">Scheduled Pick-Up</span>
+            <span class="delivery-btn" onclick="selectDelivery('Delivery')">Delivery</span>
+
+            <!-- Pick-up Hour Dropdown-->
+            <div id="pickup-hour-container" class="hidden">
+                <label for="pickup-hour">Select Pick-Up Time:</label>
+                <select id="pickup-hour">
+                    <option value="08:00 AM">08:00 AM</option>
+                    <option value="09:00 AM">09:00 AM</option>
+                    <option value="10:00 AM">10:00 AM</option>
+                    <option value="11:00 AM">11:00 AM</option>
+                    <option value="12:00 PM">12:00 PM</option>
+                    <option value="01:00 PM">01:00 PM</option>
+                    <option value="02:00 PM">02:00 PM</option>
+                    <option value="03:00 PM">03:00 PM</option>
+                    <option value="04:00 PM">04:00 PM</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <button class="confirm-btn" onclick="confirmOrder()">CONFIRM ORDER AND DELIVERY METHOD</button>
+
+  <!-- Confirmation Popup -->
+    <div id="confirmation-modal">
+        <div class="confirmation-box">
+            <p id="popup-message">Your order has been confirmed!</p>
+            <button id="close-popup">OK</button>
+        </div>
+    </div>
+
+    
+
+    <script src="order.js" defer></script>
+
+</body>
+</html>

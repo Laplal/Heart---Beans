@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="menu.js" defer></script>
+    <script src="navbar.js" defer></script>
+</head>
+<body>
+    
+    <div id="navbar-container"></div>
+        <a href="#" onclick="changeCategory('coffee', this)">Coffee</a>
+        <span class="category-divider">|</span>
+        <a href="#" onclick="changeCategory('tea', this)">Tea</a>
+        <span class="category-divider">|</span>
+        <a href="#" onclick="changeCategory('cocoa', this)">Cocoa</a>
+        <span class="category-divider">|</span>
+        <a href="#" onclick="changeCategory('cold_drinks', this)">Cold Drinks</a>
+        <span class="category-divider">|</span>
+        <a href="#" onclick="changeCategory('meals_snacks', this)">Meals & Snacks</a>
+    </div>
+    
+    <div class="divider"></div>
+  
+    
+    <div class="size-container">
+        <p class="size-title">Size:</p>
+        <div class="size-options">
+            <span>Small - 240 ML</span>
+            <span>Medium - 350 ML</span>
+            <span>Large - 470 ML</span>
+        </div>
+    </div>
+
+
+    <div id="menu-content" class="menu-items">
+    </div>
+    
+
+    
+
+</body>
+</html>

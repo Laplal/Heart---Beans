@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservations</title>
+
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reservation.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+</head>
+<body>
+
+    <div id="navbar-container"></div>
+ 
+
+    <p class="reservation-note">
+         By making a reservation, an account will be automatically created using the provided information.
+    </p>
+    
+
+    <div class="reservation-page">
+        <!-- Left Logo -->
+        <div class="logo-container">
+            <img src="Images/logo.png" alt="Left Logo" class="side-logo">
+        </div>
+    
+        <!-- Reservation Form  -->
+        <div class="reservation-container"> 
+            <h2 class="reservation-title">Reservation</h2>
+            <form id="reservation-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" required>
+    
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" required>
+    
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" required>
+
+                
+                <label for="address">Address:</label>
+                <input type="text" id="address" placeholder="Enter your address" required>
+
+    
+                <label for="date">Date:</label>
+                <input type="text" id="selected-date" placeholder="Select a date" readonly required>
+    
+                <label for="time">Time:</label>
+                <select id="time" required>
+                    <option value="">Select Time</option>
+                    <option value="10:00 AM">10:00 AM</option>
+                    <option value="12:00 PM">12:00 PM</option>
+                    <option value="2:00 PM">2:00 PM</option>
+                    <option value="6:00 PM">6:00 PM</option>
+                </select>
+    
+                <label for="guests">Number of Guests:</label>
+                <select id="guests" required>
+                    <option value="">Select Guests</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5+">5+</option>
+                </select>
+            
+    
+                <label for="requests">Requests (Optional):</label>
+                <textarea id="requests" rows="3"></textarea>
+    
+                <button type="submit" class="reserve-btn">Reserve</button>
+            </form>
+        </div>
+    
+        <!-- Right Logo -->
+        <div class="logo-container">
+            <img src="Images/logo.png" alt="Right Logo" class="side-logo">
+        </div>
+    </div>
+    
+        <!-- Confirmation Pop-up  -->
+    <div id="confirmation-modal" class="modal">
+    <div class="modal-content">
+        <p id="popup-message"></p>
+        <button id="close-popup" class="modal-btn">OK</button>
+    </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="reservation.js" defer></script>
+    <script src="navbar.js" defer></script>
+
+</body>
+</html>
